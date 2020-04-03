@@ -1,0 +1,33 @@
+fun main(args:Array<String>){
+
+    val a: Int = 8
+    val b: Int = 19
+    val max: Int
+
+    max = if (a>b){
+        a
+    }else{
+        b
+    }
+
+    println("The larger value between a and b is $max")
+    println("##############################################")
+
+    when(val x = "Alive"){
+        "Alive", "alive" -> println("The subject is still alive")
+        "Dead", "dead" -> println("The subject has been terminated")
+        else -> {
+            println("The condition of the subject remains unknown")
+     }
+    }
+
+    println("##############################################")
+
+    when(val t: Int = 6){
+        1,2,6 -> println("The value is either 1, 2 or 6")
+
+        else ->{
+            println("The the condition has not yet been met")
+        }
+    }
+}
