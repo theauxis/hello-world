@@ -83,3 +83,7 @@ fun main(args:Array<String>){
         }
     }
 }
+
+fun timesTwo(d: Int): Int {
+    return d*2;
+}
