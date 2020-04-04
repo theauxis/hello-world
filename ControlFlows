@@ -30,4 +30,56 @@ fun main(args:Array<String>){
             println("The the condition has not yet been met")
         }
     }
+    
+    when(val x: Int = 8){
+        1 -> println("The hidden value of x is $x")
+        8 -> println("The hidden value of x is $x")
+        else -> {
+            println("The value of x is too hidden to see")
+     }
+    }
+    
+    println("###################################################")
+    
+    val items = listOf("one","two","three","four","five")
+    for (i in items)
+        println("There are now $i person(s) in the house")
+
+    println("###################################################")
+
+    for ((i,v) in items.withIndex())
+        println("The value of element $i is $v")
+
+    println("###################################################")
+
+    var w = 0
+    while (w<=5){
+        println(w)
+        w++
+    }
+
+    println("###################################################")
+
+    var p = 50
+    do {
+        p += 10
+        println(p)
+    } while (p<=50)
+
+    println("###################################################")
+
+    val d = 10
+    println("Here is what $d looks like through the function: " + timesTwo(d))
+
+    println("###################################################")
+
+    myLabel@ for (x in 1..10){
+        if (x==5){
+            println("Because I am $x, the operation will terminate")
+            break@myLabel
+        } else{
+            println("My value is $x")
+            continue@myLabel
+        }
+    }
 }
